@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.kkrawczyk.snake.SnakeSurfaceEngine
+        android:id="@+id/sv_game_field"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/ll_control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/controlPanelBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/iv_control_panel_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/turn_left_button_description"
+            android:src="@drawable/baseline_arrow_back_white_48"/>
+
+        <ImageView
+            android:id="@+id/iv_control_panel_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/turn_right_button_description"
+            android:src="@drawable/baseline_arrow_forward_white_48"/>
+    </LinearLayout>
+</LinearLayout>

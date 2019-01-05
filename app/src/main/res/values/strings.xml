@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">com.kkrawczyk.snake</string>
+    <string name="title_activity_snake">SnakeActivity</string>
+    <string name="new_game_text_btn">New Game</string>
+    <string name="turn_left_button_description">Turn left button</string>
+    <string name="turn_right_button_description">Turn right button</string>
+</resources>
