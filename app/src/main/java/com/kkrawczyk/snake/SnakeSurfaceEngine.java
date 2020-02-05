@@ -145,6 +145,7 @@ public class SnakeSurfaceEngine extends SurfaceView implements Runnable {
 
     /**
      * 
+     * 
      * Metoda inicjalizująca nowy wątek dla gry
      */
     private void startThread() {
