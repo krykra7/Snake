@@ -126,6 +126,7 @@ public class SnakeSurfaceEngine extends SurfaceView implements Runnable {
     /**
      * 
      * 
+     * 
      * Metoda odpowiedzialna za uruchomienie nowej rozgrywki, ustawia aktualny czas systemu dla obecnej klatki
      * {@link SnakeSurfaceEngine#frameTime}, następnie inicjuje węża z jednym segmentem - głową,
      * tworzy segment jedzenia i rozpoczyna nowy wątek
