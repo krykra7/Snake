@@ -115,7 +115,7 @@ public class SnakeSurfaceEngine extends SurfaceView implements Runnable {
      */
     @Override
     public void run() {
-        while (isRunning) {
+        while (!isRunning) {
             if (isFrameElapsed()) {
                 updateSnake();
                 draw();
@@ -130,6 +130,7 @@ public class SnakeSurfaceEngine extends SurfaceView implements Runnable {
      */
     public void startNewGame() {
         score = 0;
+        snake = new Snake();
         snake = new Snake();
         this.frameTime = System.currentTimeMillis();
 
